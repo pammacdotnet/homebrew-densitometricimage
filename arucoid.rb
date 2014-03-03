@@ -26,44 +26,30 @@ class Arucoid < Formula
 end
 
 __END__
-diff -cr aruco_test_board_gl-orig.cpp aruco_test_board_gl.cpp
-*** aruco_test_board_gl-orig.cpp	Sun Mar  2 20:21:07 2014
---- aruco_test_board_gl.cpp	Sun Mar  2 20:21:36 2014
-***************
-*** 29,35 ****
-  #include <fstream>
-  #include <sstream>
-  #ifdef __APPLE__
-!   #include <gl.h>
-    #include <GLUT/glut.h>
-  #elif _MSC_VER
-    //http://social.msdn.microsoft.com/Forums/eu/vcgeneral/thread/7d6e6fa5-afc2-4370-9a1f-991a76ccb5b7
---- 29,35 ----
-  #include <fstream>
-  #include <sstream>
-  #ifdef __APPLE__
-!   #include <OpenGL/gl.h>
-    #include <GLUT/glut.h>
-  #elif _MSC_VER
-    //http://social.msdn.microsoft.com/Forums/eu/vcgeneral/thread/7d6e6fa5-afc2-4370-9a1f-991a76ccb5b7
+diff --git a/utils/aruco_test_gl.cpp b/utils/aruco_test_gl.cpp
+index 74caf5c..c6c72a6 100644
+--- a/utils/aruco_test_gl.cpp
++++ b/utils/aruco_test_gl.cpp
+@@ -30,7 +30,7 @@ or implied, of Rafael Muñoz Salinas.
+ #include <fstream>
+ #include <sstream>
+ #ifdef __APPLE__
+-#include <gl.h>
++#include <OpenGL/gl.h>
+ #include <GLUT/glut.h>
+ #else
+ #include <GL/gl.h>
 
-diff -cr aruco_test_gl-orig.cpp aruco_test_gl.cpp
-*** aruco_test_gl-orig.cpp	Thu Jun 14 15:42:30 2012
---- aruco_test_gl.cpp	Sun Mar  2 20:25:07 2014
-***************
-*** 30,36 ****
-  #include <fstream>
-  #include <sstream>
-  #ifdef __APPLE__
-! #include <gl.h>
-  #include <GLUT/glut.h>
-  #else
-  #include <GL/gl.h>
---- 30,36 ----
-  #include <fstream>
-  #include <sstream>
-  #ifdef __APPLE__
-! #include <OpenGL/gl.h>
-  #include <GLUT/glut.h>
-  #else
-  #include <GL/gl.h>
+diff --git a/utils/aruco_test_board_gl.cpp b/utils/aruco_test_board_gl.cpp
+index c21ff31..4681910 100644
+--- a/utils/aruco_test_board_gl.cpp
++++ b/utils/aruco_test_board_gl.cpp
+@@ -29,7 +29,7 @@ or implied, of Rafael Muñoz Salinas.
+ #include <fstream>
+ #include <sstream>
+ #ifdef __APPLE__
+-  #include <gl.h>
++  #include <OpenGL/gl.h>
+   #include <GLUT/glut.h>
+ #elif _MSC_VER
+   //http://social.msdn.microsoft.com/Forums/eu/vcgeneral/thread/7d6e6fa5-afc2-4370-9a1f-991a76ccb5b7
