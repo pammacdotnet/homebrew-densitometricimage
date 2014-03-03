@@ -10,8 +10,8 @@ class Vtk5id < Formula
   depends_on :python
   depends_on 'sip'
   depends_on 'pyqt'
-  conflicts_with 'vtk', :because =>  "Different versions of the same library."
-  conflicts_with 'vtk5', :because =>  "Different versions of the same library."
+  conflicts_with 'vtk' if Formula.installed.join.include? "vtk"
+  conflicts_with 'vtk5' if Formula.installed.join.include? "vtk5"
   
   def patches
     DATA

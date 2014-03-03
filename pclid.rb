@@ -20,9 +20,7 @@ class Pclid < Formula
   
   depends_on :python
   
-  conflicts_with 'pcl', :because =>  "Different versions of the same library."
-
-
+  conflicts_with 'pcl' if Formula.installed.join.include? "pcl"
 
   def patches
    # DATA
