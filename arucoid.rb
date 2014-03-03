@@ -8,7 +8,7 @@ class Arucoid < Formula
   depends_on 'cmake' => :build
   depends_on 'opencvid' => :build
   depends_on 'pkg-config' => :build
-  conflicts_with 'aruco', :because =>  "Different versions of the same library."
+
   def patches
     DATA
   end
