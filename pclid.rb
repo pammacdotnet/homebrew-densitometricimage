@@ -8,7 +8,7 @@ class Pclid < Formula
   depends_on 'pkg-config' => :build
   depends_on 'boost' 
   depends_on 'qt'
-  depends_on 'vtk5id' => ['with-qt', 'examples']
+  depends_on 'vtk5id'
   depends_on 'openni' 
   depends_on 'flann'
   depends_on 'eigen'
