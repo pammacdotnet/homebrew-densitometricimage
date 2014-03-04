@@ -27,7 +27,7 @@ class Pclid < Formula
   end
 
   def install
-    qhull2011_base = Formula.factory('qhull2011').installed_prefix
+    qhull2011_base = Formula.factory('qhull2011id').installed_prefix
     args = std_cmake_args + %W[
       -DGLEW_INCLUDE_DIR=#{HOMEBREW_PREFIX}/include/GL
       -DQHULL_ROOT=#{qhull2011_base}
