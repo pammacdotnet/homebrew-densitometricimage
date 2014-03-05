@@ -2,8 +2,8 @@ require 'formula'
 
 class Opencvid < Formula
   homepage 'http://opencv.org/'
-  url 'https://github.com/Itseez/opencv/archive/2.4.7.1.tar.gz'
-  sha1 'b6b0dd72356822a482ca3a27a7a88145aca6f34c'
+  url 'https://github.com/Itseez/opencv/archive/2.4.8.2.tar.gz'
+  sha1 '15c91f8fc806d39735ac4ce6a1c381541d4b5c80'
 
 
   depends_on 'cmake' => :build
