@@ -21,7 +21,7 @@ class Opencvid < Formula
 
   depends_on 'ffmpeg'
 
-  conflicts_with 'opencv' if Formula.installed.join.include? "opencv"
+  conflicts_with 'opencv' if Formula.installed.join(" ").include? "opencv"
 
   def patches
     DATA
