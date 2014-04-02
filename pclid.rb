@@ -37,7 +37,7 @@ class Pclid < Formula
       -DWITH_CUDA:BOOL=OFF
       -DOPENNI_INCLUDE_DIR=#{HOMEBREW_PREFIX}/include/ni
       -DBUILD_GPU:BOOL=ON
-      -DBUILD_apps:BOOL=ON
+      -DBUILD_apps:BOOL=OFF
       -DBUILD_examples:BOOL=ON
     ]
 
